@@ -9,4 +9,13 @@ class programmer(models.Model):
     Phone = models.CharField(max_length=10 ,null= True, default=None)
     is_active = models.BooleanField(default=True)
     
+class student(models.Model):
+    name = models.CharField(max_length=20)
+    apellid = models.CharField(max_length=20)
+    sexo = models.CharField(max_length=1)
+    Nficha = models.IntegerField(max_length=7)
+    formacion = models.BooleanField(default=True)
+    fechaingreso = models.TimeField(auto_now_add=True)
+    
+    
                                                                                     

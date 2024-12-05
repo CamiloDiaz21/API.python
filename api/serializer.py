@@ -6,3 +6,9 @@ class ProgrammerSerializer(serializers.ModelSerializer):
         model = programmer
         #fields= ('fullname','nickname','ege')
         fields= '__all__'
+        
+
+class studentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Student
+        fields= '__all__'
